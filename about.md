@@ -4,12 +4,6 @@ title: About
 permalink: /about/
 ---
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](http://jekyllrb.com/)
+The animation and VFX industry is competitive and constantly changing. The future is always uncertain. The hours are long, yet not without rewards. We all chose to enter this uncertain landscape, but we are not alone.
 
-You can find the source code for the Jekyll new theme at:
-{% include icon-github.html username="jekyll" %} /
-[minima](https://github.com/jekyll/minima)
-
-You can find the source code for Jekyll at
-{% include icon-github.html username="jekyll" %} /
-[jekyll](https://github.com/jekyll/jekyll)
+On this blog, I interview artists about their careers, the state of the industry, their creative process, their muses, and their drives. Together, we can find success in our industry.
