@@ -15,7 +15,7 @@
 # in the templates via {{ site.myvariable }}.
 title: Masters of 3D
 email: aucreative@gmail.com
-description: > I interview 3D artists about insights about the industry.
+description: I interview 3D artists about insights about the industry.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: jekyllrb
