@@ -16,7 +16,7 @@
 title: Masters of 3D
 email: aucreative@gmail.com
 description: I interview 3D artists about insights into the VFX industry.
-baseurl: "masters-of-3d" # the subpath of your site, e.g. /blog
+baseurl: "/masters-of-3d" # the subpath of your site, e.g. /blog
 url: "https://usma1000.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: jekyllrb
 github_username:  jekyll
