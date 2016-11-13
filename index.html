@@ -4,7 +4,7 @@ layout: home
 <!-- This loops through the paginated posts -->
 {% for post in paginator.posts %}
 <div class="post-preview">
-  <img src="/img/{{ post.featured-image }}" alt="Artwork by {{ post.interviewee }}" />
+  <img src="img/{{ post.featured-image }}" alt="Artwork by {{ post.interviewee }}" />
   <div class="content">
     <h1><a href="{{ site.baseurl }}{{ post.url }}" class="post-link">{{ post.title }}</a></h1>
     <p class="post-meta">
