@@ -2,7 +2,7 @@
  * Site header
  */
 .site-header {
-  border-top: 5px solid $grey-color-dark;
+  border-top: 5px solid $light-blue;
   border-bottom: 1px solid $grey-color-light;
   min-height: 56px;
 
@@ -164,7 +164,7 @@
  */
 .page-content {
   padding: $spacing-unit 0;
-  background-color: #CBCED2;
+  background-color: #EBEEF2;
 }
 
 .page-heading {
@@ -182,12 +182,38 @@
 }
 
 .post-preview {
-  box-shadow: 0px 10px 40px -20px rgba(0,0,0,0.75);
+  @include outer-container;
+  box-shadow: $box-shadow;
   background-color: #fff;
-  border-radius: 3px;
+  border-radius: 6px;
   margin-bottom: $spacing-unit;
+  overflow: hidden;
+  img {
+    @include span-columns(5);
+    height: 300px;
+    object-fit: cover;
+  }
   .content {
+    @include span-columns(7);
     padding: 40px;
+  }
+  .read-interview {
+    background-color: $light-blue;
+    font-family: $heading-font-family;
+    text-align: center;
+    color: #fff;
+    display: block;
+    box-shadow: 0px 8px 40px -10px rgba(0,0,0,0.5);
+    padding: 10px 20px;
+    border-radius: 40px;
+    border: 1px solid darken($light-blue, 5%);
+    width: 200px;
+    transition: background-color 0.2s, box-shadow 0.6s;
+    &:hover {
+      text-decoration: none;
+      background-color: darken($light-blue, 10%);
+      box-shadow: 0px 10px 40px -5px rgba(0,0,0,0.5);
+    }
   }
 }
 

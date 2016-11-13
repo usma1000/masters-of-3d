@@ -4,28 +4,27 @@ layout: home
 <!-- This loops through the paginated posts -->
 {% for post in paginator.posts %}
 <div class="post-preview">
-  <img src="img/{{ post.featured-image }}" alt="Artwork by {{ post.interviewee }}" />
+  <a href="{{ site.baseurl }}{{ post.url }}" class="post-link">
+    <img src="img/{{ post.featured-image }}" alt="Artwork by {{ post.title }}" />
+  </a>
   <div class="content">
-    <h1><a href="{{ site.baseurl }}{{ post.url }}" class="post-link">{{ post.title }}</a></h1>
-    <p class="post-meta">
-      <span class="interviewee">Interviewee: {{ post.interviewee }}</span>
-    </p>
-    {{ post.content }}
+    <h2>Interview with {{ post.title }}</h2>
+    <p class="post-meta">{{ post.job }}</p>
+    {{ post.excerpt }}
+    <a href="{{ site.baseurl }}{{ post.url }}" class="read-interview">Read Interview</a>
   </div>
 </div>
 {% endfor %}
 
 <!-- Pagination links -->
 <div class="pagination">
-  {% if paginator.previous_page %}
-    <a href="{{ paginator.previous_page_path }}" class="previous">Previous</a>
-  {% else %}
-    <span class="previous">Previous</span>
-  {% endif %}
-  <span class="page_number ">Page: {{ paginator.page }} of {{ paginator.total_pages }}</span>
-  {% if paginator.next_page %}
-    <a href="{{ paginator.next_page_path }}" class="next">Next</a>
-  {% else %}
-    <span class="next ">Next</span>
+  {% if paginator.total_pages > 1 %}
+    {% if paginator.previous_page %}
+      <a href="{{ paginator.previous_page_path }}" class="previous">Previous</a>
+    {% endif %}
+    <span class="page_number ">Page: {{ paginator.page }} of {{ paginator.total_pages }}</span>
+    {% if paginator.next_page %}
+      <a href="{{ paginator.next_page_path }}" class="next">Next</a>
+    {% endif %}
   {% endif %}
 </div>

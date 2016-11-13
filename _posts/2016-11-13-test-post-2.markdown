@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  "Test Post 2"
-interviewee: "Jane Doe"
+title:  "Jane Doe"
+job: Rigger at Pixar
 featured-image: real.png
 categories: test
 ---

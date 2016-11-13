@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  "Test Post"
-interviewee: "John Doe"
+title:  "John Doe"
+job: "Modeler at Dreamworks"
 featured-image: real.png
 categories: test
 ---
