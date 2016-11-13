@@ -1,7 +1,8 @@
 ---
 layout: post
 title:  "Test Post 2"
-date:   2016-11-13 1:11:00 -0500
+interviewee: "Jane Doe"
+featured-image: real.png
 categories: test
 ---
 This is a second post.

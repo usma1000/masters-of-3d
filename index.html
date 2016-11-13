@@ -3,13 +3,16 @@ layout: home
 ---
 <!-- This loops through the paginated posts -->
 {% for post in paginator.posts %}
-  <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
-  <p class="author">
-    <span class="date">{{ post.date }}</span>
-  </p>
+<div class="post-preview">
+  <img src="/img/{{ post.featured-image }}" alt="Artwork by {{ post.interviewee }}" />
   <div class="content">
+    <h1><a href="{{ site.baseurl }}{{ post.url }}" class="post-link">{{ post.title }}</a></h1>
+    <p class="post-meta">
+      <span class="interviewee">Interviewee: {{ post.interviewee }}</span>
+    </p>
     {{ post.content }}
   </div>
+</div>
 {% endfor %}
 
 <!-- Pagination links -->
