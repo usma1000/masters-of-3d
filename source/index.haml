@@ -9,14 +9,15 @@ layout: default
     {% for post in site.posts %}
       %li.post
         %img(src="images/{{ post.featured-image }}")
-        %p.post-title
-          <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
-        %p
-          %span.date {{ post.date | date_to_string }}
-          {% for category in post.categories %}
-          %span.categories {{ category }}
-          {% endfor %}
-        %p
-          {{ post.content | truncatewords: 50 }}
+        .post-info
+          %p.post-title
+            <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
+          %p
+            %span.date {{ post.date | date_to_string }}
+            {% for category in post.categories %}
+            %span.categories {{ category }}
+            {% endfor %}
+          %p
+            {{ post.content | truncatewords: 50 }}
 
     {% endfor %}
