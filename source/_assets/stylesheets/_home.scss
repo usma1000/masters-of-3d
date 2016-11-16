@@ -1,0 +1,22 @@
+#home {
+
+  .posts {
+    @include outer-container;
+    .post {
+      @include span-columns(6);
+    }
+    .post-title {
+      font-size: 2em;
+    }
+    .categories {
+      background-color: $light-gray;
+      color: $medium-gray;
+      border: $base-border;
+      border-radius: $base-border-radius;
+      padding: 0.2em 0.6em;
+      &:hover {
+        color: $dark-gray;
+      }
+    }
+  }
+}

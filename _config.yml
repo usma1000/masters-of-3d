@@ -19,3 +19,8 @@ baseurl: /masters-of-3d
 
 # Build settings
 markdown: kramdown
+
+
+# navigate to http://localhost:4000/masters-of-3d/
+# Deploy with:
+# jekyll build && git subtree push --prefix build origin gh-pages
