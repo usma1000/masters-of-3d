@@ -574,6 +574,8 @@ body {
       margin-right: 0; }
   #home .posts .post-title {
     font-size: 2em; }
+  #home .posts .post-info {
+    padding: 1em; }
   #home .posts .categories {
     background-color: #ddd;
     color: #999;
