@@ -1,8 +1,0 @@
----
-layout: post
-title:  "Jane Doe"
-job: Rigger at Pixar
-featured-image: real.png
-categories: test
----
-This is a second post.
