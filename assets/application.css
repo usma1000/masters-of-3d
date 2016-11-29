@@ -549,6 +549,15 @@ picture {
   margin: 0;
   max-width: 100%; }
 
+.navigation {
+  border-bottom: 1px solid #c4c4c4;
+  padding: 1em 2em; }
+  .navigation ul {
+    float: right; }
+    .navigation ul li {
+      display: inline-block;
+      padding-left: 2em; }
+
 body {
   background-color: #ddd; }
 
@@ -556,6 +565,15 @@ body {
   max-width: 1200px;
   background-color: #fff;
   margin: 0 auto; }
+
+.categories {
+  background-color: #ddd;
+  color: #333;
+  border-bottom: 2px solid #999;
+  border-radius: 3px;
+  padding: 0.2em 0.6em; }
+  .categories:hover {
+    background-color: #d0d0d0; }
 
 #home .posts {
   max-width: 1200px;
@@ -576,11 +594,3 @@ body {
     font-size: 2em; }
   #home .posts .post-info {
     padding: 1em; }
-  #home .posts .categories {
-    background-color: #ddd;
-    color: #999;
-    border: 1px solid #c4c4c4;
-    border-radius: 3px;
-    padding: 0.2em 0.6em; }
-    #home .posts .categories:hover {
-      color: #333; }
