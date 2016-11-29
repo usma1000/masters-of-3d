@@ -11,15 +11,5 @@
     .post-info {
       padding: 1em;
     }
-    .categories {
-      background-color: $light-gray;
-      color: $medium-gray;
-      border: $base-border;
-      border-radius: $base-border-radius;
-      padding: 0.2em 0.6em;
-      &:hover {
-        color: $dark-gray;
-      }
-    }
   }
 }

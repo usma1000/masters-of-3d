@@ -1,0 +1,11 @@
+.navigation {
+  border-bottom: $base-border;
+  padding: 1em 2em;
+  ul {
+    float: right;
+    li {
+      display: inline-block;
+      padding-left: 2em;
+    }
+  }
+}

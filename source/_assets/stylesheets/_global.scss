@@ -7,3 +7,14 @@ body {
   background-color: #fff;
   margin: 0 auto;
 }
+
+.categories {
+  background-color: $light-gray;
+  color: $dark-gray;
+  border-bottom: 2px solid $medium-gray;
+  border-radius: $base-border-radius;
+  padding: 0.2em 0.6em;
+  &:hover {
+    background-color: darken($light-gray, 5%);
+  }
+}
