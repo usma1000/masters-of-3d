@@ -3,4 +3,6 @@ _site
 .jekyll-metadata
 bin
 build
+build/feed.xml
+build/index.html
 .asset-cache
