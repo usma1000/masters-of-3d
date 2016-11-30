@@ -4,6 +4,10 @@
     @include outer-container;
     .post {
       @include span-columns(6);
+
+      @include media($small-screen-down) {
+        @include span-columns(12);
+      }
     }
     .post-title {
       font-size: 2em;

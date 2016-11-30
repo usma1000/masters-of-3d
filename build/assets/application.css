@@ -559,7 +559,7 @@ picture {
       padding-left: 2em; }
 
 body {
-  background-color: #ddd; }
+  background-color: #fff; }
 
 .outer-container {
   max-width: 1200px;
@@ -590,6 +590,14 @@ body {
     width: 48.82117%; }
     #home .posts .post:last-child {
       margin-right: 0; }
+    @media screen and (max-width: 40em) {
+      #home .posts .post {
+        float: left;
+        display: block;
+        margin-right: 7.42297%;
+        width: 314.84594%; }
+        #home .posts .post:last-child {
+          margin-right: 0; } }
   #home .posts .post-title {
     font-size: 2em; }
   #home .posts .post-info {
